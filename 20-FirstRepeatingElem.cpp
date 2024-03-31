@@ -14,24 +14,24 @@ int main()
         cin>>arr[i];
     }
 
-    int indx[n+10];
+    int idx[n+10];
 
     for (int i = 0; i < n; i++)
     {
-        indx[i] = -1;        
+        idx[i] = -1;        
     }
     
     int minIdx = INT_MAX;
 
     for (int i = 0; i < n; i++)
     {
-        if (indx[arr[i]]!=-1)
+        if (idx[arr[i]]!=-1)
         {
-            minIdx = min(minIdx,indx[arr[i]]);   
+            minIdx = min(minIdx,idx[arr[i]]);   
         }
         else
         {
-            indx[arr[i]] = i;
+            idx[arr[i]] = i;
         }
         
     }
