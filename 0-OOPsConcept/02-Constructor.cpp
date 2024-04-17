@@ -40,7 +40,7 @@ int main()
 {
     Rectangle* r1 = new Rectangle();
     cout<<r1->l<<" "<<r1->b<<endl;
-    delete r1;
+    delete r1; // Deallocates the memory allocated to heap
 
     Rectangle r2(3,5);
     cout<<r2.l<<" "<<r2.b<<endl;
